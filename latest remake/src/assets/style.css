@@ -1,0 +1,180 @@
+:root {
+    --backcolor: #121314;
+    --themecolor: #252323;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--backcolor);
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--themecolor);
+    width: calc(100% - 20px);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headericon-x56dfs, .headericon-x8ffs {
+    width: 48px;
+    cursor: pointer;
+}
+
+.headericon-x8ffs {
+    border-radius: 50%;
+}
+
+main {
+    position: absolute;
+    top: 64px;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.account-popup {
+    position: fixed;
+    top: 84px;
+    right: 20px;
+    background-color: var(--themecolor);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1000;
+    border: 1px solid white;
+}
+
+.account-popup * {
+    max-width: 350px;
+    word-wrap: break-word;
+}
+
+.begintext-8sd8d {
+    color: blue; 
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ee0767;
+    }
+    25% {
+      color: #f1da08;
+    }
+    50% {
+      color: #3cff00;
+    }
+    75% {
+        color: #f1da08;
+    }
+    100% {
+        color: #ee0767;
+    }
+}
+
+.bigtext-63479c {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.half60-fdzh79c {
+    word-wrap: break-word;
+    max-width: 65vw;
+}
+
+.changing-text-6fhvf7 {
+    color: #3cff00;
+}
+
+@keyframes backgroundMig {
+    0% {
+        color: white;
+    }
+    50% {
+        color: #3cff00;
+    }
+    100% {
+        color: white;
+    }
+}
+
+.mig-98fg7sb {
+    animation: backgroundMig 1.5s infinite;
+}
+
+.textcolored-34nu {
+    color: #05ace4;
+}
+
+.textcolored-34n7 {
+    color: #f10808;
+}
+
+.sidebar-9fvh8 {
+    position: fixed;
+    top: 84px;
+    right: 20px;
+    background-color: var(--themecolor);
+    border-radius: 10px;
+    padding: 10px;
+    width: 450px;
+}
+
+.sidebar-9fvh8 * {
+    max-width: 450px;
+    word-wrap: break-word;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    outline: none;
+    border: none;
+    min-width: 300px;
+    margin-left: 15px;
+}
+
+::placeholder {
+    color: black;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 5px;
+}
+
+input[type=checkbox] {
+    margin: 0;
+    min-width: 0px;
+}
+
+p.margined-8fvh7 {
+    margin-left: 15px;
+}

@@ -1,0 +1,6 @@
+# Gorciu.NET
+# A future social-media platform with superpowers.
+# (c) 2024 Gorciu
+
+Require all denied
+RewriteEngine Off

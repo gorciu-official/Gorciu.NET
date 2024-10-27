@@ -1,0 +1,29 @@
+# Gorciu.NET
+# A future social-media platform with superpowers.
+# (c) 2024 Gorciu
+
+# ======================================================
+#                       OPTIONS
+# ======================================================
+# Apache options can be used to block directory indexing
+# and prevent from doing some things that we don't want.
+Options -Indexes
+
+# ======================================================
+#                    DIRECTORY INDEX
+# ======================================================
+# It can be used to replace files that are viewing the
+# content of folder, for example: / views the page from
+# /index.php
+DirectoryIndex index.php index.beta.php index.html index.beta.html home.php home.html style.css script.js
+
+# ======================================================
+#                    PAGE RENDERING
+# ======================================================
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
