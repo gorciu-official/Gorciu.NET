@@ -1,0 +1,1 @@
+If you want to create re-make of this repository or Gorciu.NET - just do this. If you want to contribute, they are welcome, but you need to really wait, since this project is no longer supported by me.
